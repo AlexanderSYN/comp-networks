@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Синтаксис HTML5</title>
+</head>
+<body>
+<div class="hb-layout">
+    <div id="content" class="three-col">
+        <div class="block" id="block-content">
+            <div class="block-content">
+
+                <article>
+
+                    <h1>
+                        <span>Синтаксис HTML5</span>
+                    </h1>
+
+                    <div class="info">
+                        <p class="date">
+                            <time datetime="2011-03-08T00:20:34">08.03.2011</time>
+                        </p>
+                        <p class="author">Влад Мержевич</p>
+                    </div>
+
+
+                    <div><p>HTML5 возвращает нас к стилю десятилетней давности, когда практиковалось не закрывать
+                        некоторые теги, писать значения без кавычек и по желанию набирать теги в верхнем или нижнем
+                        регистре. Такая вольность не означает, что любые правила должны игнорироваться, по-прежнему
+                        следует соблюдать корректную вложенность тегов и вставлять обязательные элементы. Отход от
+                        жёсткого синтаксиса XHTML позволяет сосредоточиться на содержании сайта, а не на соблюдении
+                        пустых формальностей, большинство из которых вызывает раздражение из-за своего несущественного
+                        значения и ненужности.</p><!--break-->
+                        <h2>Элементы HTML</h2>
+                        <p>Базовым кирпичиком веб-страницы выступает элемент. Они могут делиться по разным критериям,
+                            например, по типу или своему назначению.</p>
+                        <h3>Элементы по типу</h3>
+                        <p><strong>Пустые элементы</strong></p>
+                        <p> К ним относятся элементы, у которых нет закрывающего тега: <span
+                                class="tag">&lt;area&gt;</span>, <span class="tag">&lt;base&gt;</span>, <span
+                                class="tag">&lt;br&gt;</span>, <span class="tag">&lt;col&gt;</span>, <span class="tag">&lt;command&gt;</span>,
+                            <span class="tag">&lt;embed&gt;</span>, <span class="tag">&lt;hr&gt;</span>, <span
+                                    class="tag">&lt;img&gt;</span>, <span class="tag">&lt;input&gt;</span>, <span
+                                    class="tag">&lt;keygen&gt;</span>, <span class="tag">&lt;link&gt;</span>, <span
+                                    class="tag">&lt;meta&gt;</span>, <span class="tag">&lt;param&gt;</span>, <span
+                                    class="tag">&lt;source&gt;</span>, <span class="tag">&lt;track&gt;</span>, <span
+                                    class="tag">&lt;wbr&gt;</span>.</p>
+                        <h4>Необрабатываемые текстовые элементы</h4>
+                        <p> Предназначены для вывода скриптов или стилей, имеющих синтаксис отличный от HTML: <span
+                                class="tag">&lt;script&gt;</span>, <span class="tag">&lt;style&gt;</span>.</p>
+                        <h4> RCDATA</h4>
+                        <p> Эти элементы могут содержать любой текст или спецсимволы, за исключением нестандартных
+                            спецсимволов, которые называются сомнительным амперсандом, например: &amp;copi; или &amp;#38T.
+                            К этой группе элементов относятся <span class="tag">&lt;textarea&gt;</span> и <span
+                                    class="tag">&lt;title&gt;</span>.</p>
+                        <h4> Инородные элементы</h4>
+                        <p> Элементы, относящиеся к MathML или SVG.</p>
+                        <h4> Обычные элементы</h4>
+                        <p> Все остальные элементы, которые не входят в предыдущие группы.</p>
+                        <h3>Элементы по назначению</h3>
+                        <p><strong>Корневой элемент</strong></p>
+                        <p> Элемент <span class="tag">&lt;html&gt;</span>.</p>
+                        <h4> Метаданные документа</h4>
+                        <p><span class="tag">&lt;head&gt;</span>, а также элементы, которые располагаются внутри него.
+                        </p>
+                        <h4> Скрипты</h4>
+                        <p> Скрипты позволяют добавлять интерактивности на веб-страницу, в эту группу входят элементы,
+                            управляющие скриптами.</p>
+                        <h4> Структурные элементы</h4>
+                        <p> Элементы, управляющие основными разделами веб-страницы, вроде <span
+                                class="tag">&lt;body&gt;</span>, <span class="tag">&lt;section&gt;</span>, <span
+                                class="tag">&lt;nav&gt;</span>, <span class="tag">&lt;article&gt;</span>, <span
+                                class="tag">&lt;aside&gt;</span> и др.</p>
+                        <h4> Группирование контента</h4>
+                        <p> Элементы, обрамляющие текст, списки, изображения.</p>
+                        <h4> Текст</h4>
+                        <p> Элементы, изменяющие вид текста, например, делающие его жирным или курсивным, а также
+                            выделяющие текст по смыслу&nbsp;— аббревиатура, цитата, переменная, код и т.д.</p>
+                        <h4> Рецензирование</h4>
+                        <p> Элементы <span class="tag">&lt;ins&gt;</span> и <span class="tag">&lt;del&gt;</span>
+                            показывающие редактирования в документе.</p>
+                        <h4> Внедряемый контент</h4>
+                        <p> Элементы, вставляемые на страницу в виде разных объектов&nbsp;— изображения, видео, аудио и
+                            др.</p>
+                        <h4> Табличные данные</h4>
+                        <p> Элементы для создания и управления видом таблиц.</p>
+                        <h4> Формы</h4>
+                        <p>Формы являются одним из важных элементов любого сайта и предназначены для обмена данными
+                            между пользователем и сервером. В эту группу входят элементы для создания формы и её
+                            полей.</p>
+                        <h4>Интерактивные элементы</h4>
+                        <p> Специальные виджеты, с помощью которых пользователь может получать дополнительную информацию
+                            или управление.</p>
+                        <h4> Ссылки</h4>
+                        <p> Элементы <span class="tag">&lt;a&gt;</span> и <span class="tag">&lt;area&gt;</span>.</p>
+                        <p> Подобное группирование условно и может принимать другой вид, потому что одни и те же
+                            элементы могут принадлежать разным группам.</p>
+                        <h2>Теги</h2>
+                        <p>Для обозначения начала и конца элемента применяются теги. Внутри тегов могут быть атрибуты со
+                            своими значениями, расширяющими возможности тегов, а также содержимое (рис.&nbsp;1). </p>
+                        <p class="fig"><img src="/files/images/html5/01.png" alt="Тег &lt;a&gt; с атрибутом href"
+                                            width="467" height="145"></p>
+                        <p class="figsign">Рис. 1. Тег &lt;a&gt; с атрибутом href</p>
+                        <p> Закрывающий тег похож на открывающий, но содержит слэш (/) внутри угловых скобок.</p>
+                        <p> Пустые элементы не имеют закрывающего тега и содержимого (рис.&nbsp;2). </p>
+                        <p class="fig"><img src="/files/images/html5/02.png" alt="Пустой тег &lt;img&gt;" width="241"
+                                            height="138"></p>
+                        <p class="figsign"> Рис. 2. Пустой тег &lt;img&gt;</p>
+                        <p>Атрибуты тегов расширяют возможности самих тегов и позволяют гибко управлять различными
+                            настройками отображения элементов веб-страницы. Общее количество атрибутов достаточно
+                            велико, но их значения, как правило, можно сгруппировать по разным типам, например, задающих
+                            цвет, размер, адрес и др.&nbsp;Например, элемент <span class="tag">&lt;img&gt;</span>
+                            добавляет на веб-страницу изображение, при этом адрес графического файла мы указываем через
+                            атрибут <span class="attribute">src</span>.</p>
+                        <h2>Доктайп</h2>
+                        <p><span class="tag">&lt;!DOCTYPE&gt;</span> предназначен для указания типа текущего документа&nbsp;—
+                            DTD (document type definition, описание типа документа) для того, чтобы браузер понимал, с
+                            какой версией HTML он имеет дело. Если доктайп не указан, браузеры переходят в режим
+                            совместимости, в котором не работают многие возможности HTML5, а также возникают ошибки с
+                            отображением документа.<br>
+                            Доктайп не чувствителен к регистру и содержит всего два слова:</p>
+                        <pre style="display: none;"><code class="no-buttons">&lt;!DOCTYPE html&gt;</code></pre>
+                        <pre><code class="no-buttons html"><span
+                                class="doctype">&lt;!DOCTYPE html&gt;</span></code></pre>
+                        <p> Это ключевой элемент и обычно он располагается в первой строке кода.</p>
+                        <h2>Комментарии </h2>
+                        <p>Некоторый текст можно спрятать от показа в браузере, сделав его комментарием. Хотя такой
+                            текст пользователь не увидит, он все равно будет передаваться в документе, так что,
+                            посмотрев исходный код, можно обнаружить скрытые заметки.</p>
+                        <p> Комментарии нужны для внесения в код своих записей, не влияющих на вид страницы. Начинаются
+                            они тегом <span class="tag">&lt;!--</span> и заканчиваются тегом <span
+                                    class="tag">--&gt;</span>. Все, что находится между этими тегами отображаться на
+                            веб-странице не будет.</p>
+                        <h2>Необязательные теги</h2>
+                        <p>Если какой-то тег не указан, это не означает, что он не представлен вообще. Существуют
+                            определённые правила, позволяющие не писать некоторые теги. В табл.&nbsp;1 представлены
+                            теги, которые можно не указывать и условие, при котором это происходит.</p>
+
+                        <table class="data">
+                            <caption>
+                                Табл. 1. Необязательные теги
+                            </caption>
+                            <tbody>
+                            <tr>
+                                <th>Тег</th>
+                                <th>Условие</th>
+                            </tr>
+                            <tr>
+                                <td>&lt;html&gt;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;/html&gt;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;head&gt;</td>
+                                <td>Если внутри имеются другие элементы.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;/head&gt;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;body&gt;</td>
+                                <td>Если пустой, а также содержит что-то кроме пробела или комментария.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;/body&gt;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;/li&gt;</td>
+                                <td>Если после элемента следует <span class="tag">&lt;li&gt;</span> или он последний у
+                                    родителя.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;/dt&gt;</td>
+                                <td>Если после элемента следует <span class="tag">&lt;dt&gt;</span> или <span
+                                        class="tag">&lt;dd&gt;</span>.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;/dd&gt;</td>
+                                <td>Если после элемента следует <span class="tag">&lt;dd&gt;</span>, <span class="tag">&lt;dt&gt;</span>
+                                    или он последний у родителя.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;/p&gt;</td>
+                                <td>Если после элемента следует <span class="tag">&lt;address&gt;</span>, <span
+                                        class="tag">&lt;article&gt;</span>, <span class="tag">&lt;aside&gt;</span>,
+                                    <span class="tag">&lt;blockquote&gt;</span>, <span class="tag">&lt;dir&gt;</span>,
+                                    <span class="tag">&lt;div&gt;</span>, <span class="tag">&lt;dl&gt;</span>, <span
+                                            class="tag">&lt;fieldset&gt;</span>, <span class="tag">&lt;footer&gt;</span>,
+                                    <span class="tag">&lt;form&gt;</span>, <span class="tag">&lt;h1&gt;</span>,...,<span
+                                            class="tag">&lt;h6&gt;</span>, <span class="tag">&lt;header&gt;</span>,
+                                    <span class="tag">&lt;hgroup&gt;</span>, <span class="tag">&lt;hr&gt;</span>, <span
+                                            class="tag">&lt;menu&gt;</span>, <span class="tag">&lt;nav&gt;</span>, <span
+                                            class="tag">&lt;ol&gt;</span>, <span class="tag">&lt;p&gt;</span>, <span
+                                            class="tag">&lt;pre&gt;</span>, <span class="tag">&lt;section&gt;</span>,
+                                    <span class="tag">&lt;table&gt;</span>, <span class="tag">&lt;ul&gt;</span>.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;/rt&gt;</td>
+                                <td>Если после элемента следует <span class="tag">&lt;rt&gt;</span> или <span
+                                        class="tag">&lt;rp&gt;</span>.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;/rp&gt;</td>
+                                <td>Если после элемента следует <span class="tag">&lt;rt&gt;</span> или <span
+                                        class="tag">&lt;rp&gt;</span>.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;/optgroup&gt;</td>
+                                <td>Если после элемента следует <span class="tag">&lt;optgroup&gt;</span> или он
+                                    последний у родителя.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;/option&gt;</td>
+                                <td>Если после элемента следует <span class="tag">&lt;option&gt;</span>, <span
+                                        class="tag">&lt;optgroup&gt;</span> или он последний у родителя.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;colgroup&gt;</td>
+                                <td>Если первым внутри идёт <span class="tag">&lt;col&gt;</span> и не следует перед
+                                    другим элементом <span class="tag">&lt;colgroup&gt;</span>.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;/colgroup&gt;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;/thead&gt;</td>
+                                <td>Если после элемента следует <span class="tag">&lt;tbody&gt;</span> или <span
+                                        class="tag">&lt;tfoot&gt;</span>.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;tbody&gt;</td>
+                                <td>Если первым внутри идёт <span class="tag">&lt;tr&gt;</span> и не следует перед <span
+                                        class="tag">&lt;tbody&gt;</span>, <span class="tag">&lt;thead&gt;</span> или
+                                    <span class="tag">&lt;tfoot&gt;</span> у которых опущен закрывающий тег.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;/tbody&gt;</td>
+                                <td>Если после элемента следует <span class="tag">&lt;tbody&gt;</span> или <span
+                                        class="tag">&lt;tfoot&gt;</span> или он последний у родителя.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;/tfoot&gt;</td>
+                                <td>Если после элемента следует <span class="tag">&lt;tbody&gt;</span> или он последний
+                                    у родителя.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;/tr&gt;</td>
+                                <td>Если после элемента следует <span class="tag">&lt;tr&gt;</span> или он последний у
+                                    родителя.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;/td&gt;</td>
+                                <td>Если после элемента следует <span class="tag">&lt;td&gt;</span> &nbsp;или <span
+                                        class="tag">&lt;th&gt;</span> или он последний у родителя.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;/th&gt;</td>
+                                <td>Если после элемента следует <span class="tag">&lt;td&gt;</span> &nbsp;или <span
+                                        class="tag">&lt;th&gt;</span> или он последний у родителя.
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <p>Если открывающий тег содержит один или несколько атрибутов, то тег должен указываться
+                            обязательно.</p>
+                        <p>Из-за того, что многие теги можно не указывать, т.к. они подразумеваются по умолчанию, любой
+                            документ сводится к следующим частям.</p>
+                        <ol>
+                            <li>Необязательная метка порядка байтов (byte order mark, BOM).</li>
+                            <li><span class="tag">&lt;!DOCTYPE html&gt;</span>.</li>
+                            <li><span class="tag">&lt;title&gt;</span>.</li>
+                        </ol>
+                        <p>До и после доктайпа разрешается вставлять любое количество пробелов или комментариев. Таким
+                            образом, доктайп не обязательно должен располагаться в первой строке кода. </p>
+                        <p> В примере&nbsp;1 показан минимальный код HTML для вывода традиционного приветствия.</p>
+                        <p class="exampleTitle"> Пример 1. Минимальный HTML</p>
+                        <p class="example-support"><span class="html yes">HTML5</span><span class="yes">IE</span><span
+                                class="yes">Cr</span><span class="yes">Op</span><span class="yes">Sa</span><span
+                                class="yes">Fx</span></p>
+                        <pre id="example_0_c" style="display: none;"><code>&lt;!DOCTYPE html&gt;
+&lt;title&gt; &lt;/title&gt;
+Привет, мир!</code></pre>
+                        <div class="htmlbook-code"><pre><code class=" html"><span
+                                class="doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="tag">&lt;<span class="keyword">title</span>&gt;</span> <span class="tag">&lt;/<span
+                                    class="keyword">title</span>&gt;</span>
+Привет, мир!</code></pre>
+                            <div class="example-view"></div>
+                        </div>
+                        <p> Метка порядка байтов состоит из кода символа U+FEFF в начале&nbsp; документа, где она
+                            используется для определения кодировки. Рекомендуется убирать этот символ, поскольку его
+                            наличие приводит к ошибкам отображения документа в некоторых браузерах. Для этого можно
+                            использовать редактор Notepad++, в меню «Кодировки» выбрать пункт «Кодировать в UTF-8 (без
+                            BOM)» (рис.&nbsp;3).</p>
+                        <p class="fig"><img src="/files/images/html5/03.png" alt="Выбор кодировки" width="287"
+                                            height="275"></p>
+                        <p class="figsign"> Рис. 3. Выбор кодировки</p>
+                        <h2>Полезные ссылки</h2>
+                        <ul>
+                            <li>Подробнее о метке порядка байтов<br>
+                                <a href="http://unicode.org/faq/utf_bom.html#bom1">http://unicode.org/faq/utf_bom.html#bom1</a>
+                            </li>
+                            <li> Редактор Notepad++<br>
+                                <a href="http://notepad-plus-plus.org/download">http://notepad-plus-plus.org/download</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <nav role="navigation" aria-labelledby="book-label-1104" class="book-navigation">
+
+                        <div class="page-links">
+                            <a href="/samhtml5" rel="prev" class="page-previous" title="Go to previous page"><i
+                                    class="arrow icon-prev"></i>Самоучитель HTML5</a>
+                            <a href="/samhtml5" class="page-up" title="Go to parent page"><i class="arrow icon-up"></i>Оглавление</a>
+                            <a href="/samhtml5/ustarevshie-tegi-i-atributy" rel="next" class="page-next"
+                               title="Go to next page">Устаревшие теги и атрибуты<i class="arrow icon-next"></i></a>
+                        </div>
+                    </nav>
+
+
+                </article>
+            </div>
+        </div>
+
+        <div id="similar">
+            <div class="block" id="block-views-block-similar-html">
+                <h2 class="block-title">HTML по теме</h2>
+                <div class="block-content">
+                    <div>
+
+
+                        <ul>
+
+                            <li><a href="/html/title" hreflang="ru">Тег &lt;title&gt;</a></li>
+                            <li><a href="/html/%21doctype" hreflang="ru">Элемент &lt;!DOCTYPE&gt;</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="block" id="block-htmlbook-block-26">
+            <div class="block-content">
+
+                <div>
+                    <div id="yandex_rtb_R-A-31105-2" style="max-height: 300px" data-d77664e19c="">
+                        <div></div>
+                        <div data-r-a-31105-2-yandex_rtb_r-a-31105-2="" class="csr-uniq3"></div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <p class="note comment-note">Не выкладывайте свой код напрямую в комментариях, он отображается некорректно.
+            Воспользуйтесь сервисом <a href="//cssdeck.com/labs" rel="nofollow">cssdeck.com</a> или <a
+                    href="//jsfiddle.net" rel="nofollow">jsfiddle.net</a>,
+            сохраните код и в комментариях дайте на него ссылку. Так и результат сразу увидят.</p>
+
+        <div id="disqus_thread">
+            <iframe id="dsq-app7536" name="dsq-app7536" allowtransparency="true" frameborder="0" scrolling="no"
+                    tabindex="0" title="Disqus" sandbox="allow-forms allow-popups allow-same-origin allow-scripts"
+                    width="100%"
+                    src="//tempest.services.disqus.com/ads-iframe/taboola/?position=top&amp;shortname=htmlbook&amp;experiment=network_default&amp;variant=fallthrough&amp;service=dynamic&amp;anchorColor=%231d67a4&amp;colorScheme=light&amp;sourceUrl=https%3A%2F%2Fhtmlbook.ru%2Fsamhtml5%2Fsintaksis-html5&amp;typeface=sans-serif&amp;disqus_version=current&amp;sourceless=false"
+                    style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 720px !important;"></iframe>
+            <iframe id="dsq-app7533" name="dsq-app7533" allowtransparency="true" frameborder="0" scrolling="no"
+                    tabindex="0" title="Disqus"
+                    allow="autoplay 'src' https://www.youtube.com https://youtube.com https://m.youtube.com https://youtu.be https://www.youtube-nocookie.com"
+                    width="100%"
+                    src="https://disqus.com/embed/comments/?base=default&amp;f=htmlbook&amp;t_u=https%3A%2F%2Fhtmlbook.ru%2Fsamhtml5%2Fsintaksis-html5&amp;t_d=%D0%A1%D0%B8%D0%BD%D1%82%D0%B0%D0%BA%D1%81%D0%B8%D1%81%20HTML5%20%7C%20htmlbook.ru&amp;t_t=%D0%A1%D0%B8%D0%BD%D1%82%D0%B0%D0%BA%D1%81%D0%B8%D1%81%20HTML5%20%7C%20htmlbook.ru&amp;s_o=default#version=971dba38bbe3e7f3ef55979825d44a27"
+                    style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 2726px !important;"
+                    horizontalscrolling="no" verticalscrolling="no"></iframe>
+        </div>
+
+    </div>
+    <div id="sidebar">
+        <div class="block" id="block-views-block-popular-top">
+            <h2 class="block-title">Популярные материалы</h2>
+            <div class="block-content">
+                <div>
+
+
+                    <ul>
+
+                        <li class="practical-popular"><a href="/samhtml" hreflang="ru">Самоучитель HTML4</a></li>
+                        <li class="practical-popular"><a href="/samcss" hreflang="ru">Самоучитель CSS</a></li>
+                        <li class="practical-popular"><a href="/samhtml/tekst/spetssimvoly"
+                                                         hreflang="ru">Спецсимволы</a></li>
+                        <li class="practical-popular"><a href="/faq/kak-dobavit-kartinku-na-veb-stranitsu"
+                                                         hreflang="ru">Как добавить картинку на веб-страницу?</a></li>
+                        <li class="practical-popular"><a href="/samhtml/struktura-html-koda" hreflang="ru">Структура
+                            HTML-кода</a></li>
+                        <li class="practical-popular"><a href="/samhtml/vvedenie-v-html" hreflang="ru">Введение в
+                            HTML</a></li>
+                        <li class="practical-popular"><a href="/content/vyravnivanie-teksta" hreflang="ru">Выравнивание
+                            текста</a></li>
+                        <li class="practical-popular"><a href="/samcss/sposoby-dobavleniya-stiley-na-stranitsu"
+                                                         hreflang="ru">Способы добавления стилей на страницу</a></li>
+                        <li class="practical-popular"><a href="/samhtml/yakorya" hreflang="ru">Якоря</a></li>
+                        <li class="practical-popular"><a href="/samlayout/blochnaya-verstka/pozitsionirovanie-elementov"
+                                                         hreflang="ru">Позиционирование элементов</a></li>
+                        <li class="practical-popular"><a
+                                href="/faq/kak-dobavit-ikonku-sayta-v-adresnuyu-stroku-brauzera" hreflang="ru">Как
+                            добавить иконку сайта в адресную строку браузера?</a></li>
+                        <li class="practical-popular"><a href="/samhtml/ssylki" hreflang="ru">Ссылки</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="block" id="block-htmlbook-block-10">
+            <div class="block-content">
+
+                <div>
+                    <div class="adfinity_block_4593"></div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
