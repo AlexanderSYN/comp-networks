@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+</head>
+<body>
+    <center>
+        <h1>Форма регистрации</h1>
+
+        <form method="POST">
+
+            <label style="margin-left: 0.5rem;">Имя</label>
+            <input type="text" name="name" size="20" required />
+            <br/><br/>
+
+            <label>e-mail</label>
+            <input type="mail" name="email" size="20" required />
+            <br/><br/>
+
+            <label>Пароль</label>
+            <input type="password" name="password" size="20" required/>
+            <br/><br/>
+
+            <label style="margin-left: -3rem;">Повтор пароля</label>
+            <input type="password" name="repeat_password" size="20" required />
+            <br/><br/>
+
+            
+            <label>Пол</label>
+            <input type="radio" name="gender" value="M" checked>мужскoй 
+            <input type="radio" name="gender" value="Ж">женский
+            <br/><br/>
+            
+            Увлечения
+            <select name="hobby" size="7" multiple>
+                <option selected value="comp">компьютеры</option>
+                <option selected value="sport">спорт</option>
+                <option selected value="games">игры</option>
+                <option selected value="animals">животные</option>
+                <option selected value="car">автомобили</option>
+                <option selected value="club">клубы</option>
+                <option selected value="music">музыка</option>
+            </select>
+            <br/><br/>
+
+            <label>Ваши пожелания</label>
+            <textarea></textarea>
+            <br/><br/>
+        
+            <button name="send">Отправить</button>
+            <button name="clear">Очистить</button>
+        </form>
+    </center>
+</body>
+</html>
