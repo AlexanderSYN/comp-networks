@@ -1,0 +1,14 @@
+h2.sic {
+    font-size: 140%;
+    color: maroon;
+    font-weight: normal;
+    margin-left: 30px;
+    margin-bottom: 0px;
+}
+
+h2.sic + p {
+    background: #ddd;
+    margin-left: 30px;
+    margin-top: 0.5em;
+    padding: 7px;
+}
