@@ -1,0 +1,6 @@
+DIV I { 
+    color: green; 
+}
+P > I {
+    color: red; 
+}

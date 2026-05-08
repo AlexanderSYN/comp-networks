@@ -1,0 +1,9 @@
+DIV[class|="block"] {
+    background: #306589; 
+    color: #acdb4c; 
+    padding: 5px;
+}
+
+DIV[class|="block"] A {
+    color: #fff;
+}

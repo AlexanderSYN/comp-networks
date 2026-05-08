@@ -1,0 +1,8 @@
+Q {
+    font-style: italic;
+    quotes: "\00AB" "\00BB";
+}
+
+Q[title] {
+    color: maroon;
+}
