@@ -1,0 +1,12 @@
+p {
+    font-size: 150%;
+}
+q:lang(dr) {
+    quotes: "\201E" "\201C";
+}
+q:lang(en) {
+    quotes: "\201C" "\201D";
+}
+q:lang(fr), q:lang(ru) {
+    quotes: "\00AB" "\00BB";
+}

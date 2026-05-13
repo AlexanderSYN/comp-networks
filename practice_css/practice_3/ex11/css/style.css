@@ -1,0 +1,6 @@
+:optional {
+    border: 2px solid blue;
+}
+:required {
+    border: 2px solid red;
+}

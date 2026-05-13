@@ -1,0 +1,9 @@
+table {
+    border-spacing: 0;
+}
+td {
+    padding: 4px;
+}
+tr:hover {
+    background: #fc0;
+}
