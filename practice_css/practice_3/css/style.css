@@ -1,0 +1,38 @@
+:root {
+    text-align: center;
+}
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.team > .member {
+    display: block;
+    width: 286px;
+    background-color: #e6e4e4;
+    border: 1px solid rgba(0, 0, 0.125);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0px 1px rgba(0, 0, 0, 0.05);
+}
+
+.member > img {
+    border-radius: 15px;
+}
+
+.team > .member:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.65);
+}
+
+.team > .member {
+    box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.05); 
+}
+
+.member > h1::after {
+    content: url(../img/icon.png);
+    width: 15%;
+}
+
