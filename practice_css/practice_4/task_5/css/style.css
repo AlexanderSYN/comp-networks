@@ -1,0 +1,12 @@
+.text-1 {
+  letter-spacing: -1px;  
+}
+.text-2 {
+    letter-spacing: 1px;
+}
+.text-3 {
+    word-spacing: -1px;
+}
+.text-4 {
+    word-spacing: 1px;
+}
