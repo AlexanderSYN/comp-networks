@@ -1,0 +1,14 @@
+table {
+    background: #ff0;
+    color: black;
+    border: solid;
+    border-collapse:separate;
+}
+
+th {
+    border: 1px solid green;
+}
+
+td {
+    border: 1px solid green;
+}

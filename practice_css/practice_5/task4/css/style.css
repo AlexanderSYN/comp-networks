@@ -1,0 +1,18 @@
+table {
+    color: black;
+    border: double;
+    border-collapse: collapse;
+    border-left: 10px 10px;
+
+}
+
+th {
+    padding-right: 50px;
+    border: 1px solid black;
+    background-color: gray;
+}
+
+td {
+    padding-right: 50px;
+    border: 1px solid black;
+}
