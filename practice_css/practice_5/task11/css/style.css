@@ -1,0 +1,20 @@
+table {
+    font-family: Lucida Sans Unicode;
+    border-collapse: collapse;
+    color: #669;
+    text-align: left;
+}
+
+th {
+    text-color: #039;
+    border-bottom: 2px solid #6678b1;
+}
+
+tr:hover td{
+    color: #6699ff;
+}
+
+td {
+    padding-top: 15px;
+    border-bottom: 1px solid #6678b1;
+}

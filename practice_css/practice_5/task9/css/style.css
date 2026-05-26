@@ -1,0 +1,23 @@
+table {
+    border-color: Maroon;
+    border-collapse: collapse;
+    border-bottom: 3px solid Maroon;
+}
+
+thead {
+    background-color: Maroon;
+}
+
+th {
+    color: white;
+    padding-right: 30px;
+}
+
+tbody {
+    background-color: #fffacd;
+}
+
+td {
+    color: black;
+    padding-right: 30px;
+}
