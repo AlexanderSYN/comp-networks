@@ -1,0 +1,29 @@
+body {
+    font-family: serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.block-cm, .block-pct {
+    border: 2px solid #ff0000;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.block-cm {
+    padding-left: 2cm;
+    margin-bottom: 5px;
+}
+
+.block-pct {
+    padding-left: 50%;
+}

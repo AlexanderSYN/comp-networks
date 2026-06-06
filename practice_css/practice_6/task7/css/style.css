@@ -1,0 +1,21 @@
+body {
+    font-family: serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.blue-block {
+    width: 500px;
+    height: 100px;
+    background-color: #b2e0e6;
+}

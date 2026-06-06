@@ -1,0 +1,43 @@
+body {
+    font-family: serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.block {
+    width: 600px;
+    height: 60px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    box-sizing: border-box;
+    border-width: 20px;
+}
+
+.b-outset {
+    border-style: outset;
+    border-color: #0000ff;
+}
+
+.b-inset {
+    border-style: inset;
+    border-color: #cc0000 #0000ff;
+}
+
+.b-groove {
+    border-style: groove;
+    border-color: #cc0000 #00cc00 #0000ff;
+}
+
+.b-ridge {
+    border-style: ridge;
+    border-color: #cc0000 #00cc00 #0000ff #ff00ff;
+}
+
+.note {
+    font-size: 14px;
+    margin-top: 25px;
+    line-height: 1.4;
+}
