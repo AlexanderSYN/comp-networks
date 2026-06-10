@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="numOne" placeholder="1 число" />
+    <input type="number" id="numTwo" placeholder="2 число" />
+    <button id="btnSloz">Сложение</button>
+    <p id="res">Результат: </p>
+
+    <script>
+        let numOne = document.querySelector("#numOne");
+        let numTwo = document.querySelector("#numTwo");
+        let res = document.querySelector("#res");
+        let btn = document.querySelector("#btnSloz");
+
+        btn.onclick = function() {
+            let answer = parseFloat(numOne.value) + parseFloat(numTwo.value);
+            res.textContent = `Результат: ${answer}`;
+            res.style.color = "black";
+        };
+    </script>
+</body>
+</html>

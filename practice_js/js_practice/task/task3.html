@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: gray;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="red"></div>
+    <div id="yellow"></div>
+    <div id="green"></div>
+
+    <button id="btnRed">красный</button>
+    <button id="btnYellow">желтый</button>
+    <button id="btnGreen">зеленый</button>
+
+    <script>
+        let red = document.querySelector("#red");
+        let yellow = document.querySelector("#yellow");
+        let green = document.querySelector("#green");
+
+        let btnRed = document.querySelector("#btnRed");
+        let btnYellow = document.querySelector("#btnYellow");
+        let btnGreen = document.querySelector("#btnGreen");
+
+        function resetColors() {
+            red.style.background = "gray";
+            yellow.style.background = "gray";
+            green.style.background = "gray";
+        };
+        
+        btnRed.onclick = function() {
+            resetColors();
+            red.style.background = "red";
+        };
+        btnYellow.onclick = function() {
+            resetColors();
+            yellow.style.background = "yellow";
+        };
+        btnGreen.onclick = function() {
+            resetColors();
+            green.style.background = "green";
+        };
+    </script>
+</body>
+</html>

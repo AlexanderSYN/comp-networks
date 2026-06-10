@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="name" placeholder="Введите ваше имя" />
+    <button id="btnSayHello">Сказать привет</button>
+    <p id="result"></p>
+
+    <script>
+        let name = document.querySelector("#name");
+        let btn = document.querySelector("#btnSayHello");
+        let res = document.querySelector("#result");
+
+        btn.onclick = function() {
+            if (name.value.trim() === "") {
+                console.log("Вы не ввели имя");
+            }
+            else {
+                res.textContent = `Привет ${name.value.trim()}!`;
+                res.style.color = "color: black;";
+            }
+        };
+    </script>
+</body>
+</html>

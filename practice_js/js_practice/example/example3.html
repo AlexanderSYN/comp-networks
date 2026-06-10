@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="paragraph"></p>
+    <button id="btn">pick me</button>
+
+    <script>
+      let btn = document.querySelector("#btn");
+      let text = document.querySelector("#paragraph");
+
+      btn.onclick = function() {
+        text.textContent = "Кнопка сработал!";
+        text.style.color = "blue";
+      };
+    </script>
+</body>
+</html>
