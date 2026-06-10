@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="nums" placeholder="Введите число" />
+    <button id="btn">Проверить</button>
+    <p id="res"></p>
+
+    <script>
+        let num = document.querySelector("#nums");
+        let btn = document.querySelector("#btn");
+        let res = document.querySelector("#res");
+
+        btn.onclick = function() {
+            if (parseFloat(num.value) % 2 === 0) {
+                res.textContent = "четное";
+                res.style.color = "black";
+            } else {
+                res.textContent = "нечетное";
+                res.style.color = "black";    
+            }
+        };
+    </script>
+</body>
+</html>

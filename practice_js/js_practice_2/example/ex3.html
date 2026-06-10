@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Пример В</title>
+</head>
+<body>
+    <input type="password" id="password" placeholder="Введите пароль">
+    <button id="checkPwd">Проверить</button>
+    <p id="pwdMsg"></p>
+
+    <script>
+        let checkBtn = document.querySelector("#checkPwd");
+        let pwdInput = document.querySelector("#password");
+        let msg = document.querySelector("#pwdMsg");
+
+        function checkPassword(pwd) {
+            if (pwd.length < 6) {
+                return "Слишком короткий (минимум 6 символов)";
+            } else if (pwd.length > 20) {
+                return "Слишком длинный (максимум 20 символов)";
+            } else {
+                return "Пароль подходит";
+            }
+        }
+
+        checkBtn.onclick = function() {
+            let password = pwdInput.value;
+            let result = checkPassword(password);
+            msg.textContent = result;
+            
+            if (result === "Пароль подходит") {
+                msg.style.color = "green";
+            } else {
+                msg.style.color = "red";
+            }
+        };
+    </script>
+</body>
+</html>
